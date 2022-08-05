@@ -10,10 +10,12 @@ import org.junit.jupiter.api.Test;
 class GeometriaTest {
 
 	Geometria geo;
+	Geometria geo2;
 
 	@BeforeEach
 	public void before() {
 		geo = new Geometria();
+		geo2 = new Geometria(2);
 	}
 
 	@Test
@@ -143,13 +145,25 @@ class GeometriaTest {
 		assertEquals(resultEsperado, resultado);
 	}
 
-	@Test
+	
+	@Test //testSetArea()
+	public void testSetArea() {
+		double inputArea = 20.55;
+		double areaEsperada = 20.55;
+		geo2.setArea(inputArea);
+		double areaResult = geo2.getArea();
+		assertEquals(areaEsperada,areaResult);		
+	}	
+	
+	@Test 
+
 	public void testGetSetId() {
 		int idEsperado = 4;
 		int idResultado;
 		geo.setId(4);
 		idResultado = geo.getId();
 		assertEquals(idEsperado, idResultado);
+
 
 	}
 
