@@ -49,54 +49,62 @@ class GeometriaTest {
 	}
 
 	@Test
-	public void testFigura() {
-		Geometria geo2 = new Geometria(2);
+	public void testFigura() {		
 		String figuraResultado;
 		int input;
 		String figuraEsperada;
 
 		figuraEsperada = "cuadrado";
 		input = 1;
-		figuraResultado = geo2.figura(input);
+		Geometria geo1 = new Geometria(input);
+		figuraResultado = geo1.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Circulo";
 		input = 2;
+		Geometria geo2 = new Geometria(input);
 		figuraResultado = geo2.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Triangulo";
 		input = 3;
-		figuraResultado = geo2.figura(input);
+		Geometria geo3 = new Geometria(input);
+		figuraResultado = geo3.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Rectangulo";
 		input = 4;
-		figuraResultado = geo2.figura(input);
+		Geometria geo4 = new Geometria(input);
+		figuraResultado = geo4.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Pentagono";
 		input = 5;
-		figuraResultado = geo2.figura(input);
+		Geometria geo5 = new Geometria(input);
+		figuraResultado = geo5.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Rombo";
 		input = 6;
-		figuraResultado = geo2.figura(input);
+		Geometria geo6 = new Geometria(input);
+		figuraResultado = geo6.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Romboide";
 		input = 7;
-		figuraResultado = geo2.figura(input);
+		Geometria geo7 = new Geometria(input);
+		figuraResultado = geo7.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Trapecio";
 		input = 8;
-		figuraResultado = geo2.figura(input);
+		Geometria geo8 = new Geometria(input);
+		figuraResultado = geo8.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
 		figuraEsperada = "Default";
 		input = -1;
+		Geometria geo9 = new Geometria(input);
 		figuraResultado = geo2.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 	}
