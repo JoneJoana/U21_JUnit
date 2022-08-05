@@ -142,15 +142,15 @@ class GeometriaTest {
 		int resultEsperado = 17;
 		assertEquals(resultEsperado, resultado);
 	}
-	
-	@Test 
+
+	@Test
 	public void testGetSetId() {
 		int idEsperado = 4;
 		int idResultado;
 		geo.setId(4);
 		idResultado = geo.getId();
 		assertEquals(idEsperado, idResultado);
-		
+
 	}
 
 	@Test
@@ -158,6 +158,16 @@ class GeometriaTest {
 		geo.setNom("figuritas");
 		String resultado = geo.getNom();
 		String esperado = "figuritas";
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testtoString() {
+		geo.setId(9);
+		geo.setNom("Default");
+		geo.setArea(23);
+		String resultado = geo.toString();
+		String esperado = "Geometria [id=9, nom=Default, area=23.0]";
 		assertEquals(esperado, resultado);
 	}
 
