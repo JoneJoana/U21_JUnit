@@ -54,5 +54,14 @@ class GeometriaTest {
 		int resultEsperado = 125;
 		assertEquals(resultEsperado, resultado);
 	}
+	
+	@Test
+	public void testAreaRombo() {
+		int inputD = 5;
+		int inputd = 7;
+		int resultado = geo.arearombo(inputD, inputd);
+		int resultEsperado = 17;
+		assertEquals(resultEsperado, resultado);
+	}
 
 }
