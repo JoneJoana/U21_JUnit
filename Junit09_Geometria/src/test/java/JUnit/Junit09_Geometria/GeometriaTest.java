@@ -51,7 +51,7 @@ class GeometriaTest {
 	}
 
 	@Test
-	public void testFigura() {		
+	public void testFigura() {
 		String figuraResultado;
 		int input;
 		String figuraEsperada;
@@ -152,6 +152,23 @@ class GeometriaTest {
 		geo2.setArea(inputArea);
 		double areaResult = geo2.getArea();
 		assertEquals(areaEsperada,areaResult);		
+	}	
+	
+	@Test 
+	public void testGetSetId() {
+		int idEsperado = 4;
+		int idResultado;
+		geo.setId(4);
+		idResultado = geo.getId();
+		assertEquals(idEsperado, idResultado);		
+	}
+
+	@Test
+	public void testSetGetNom() {
+		geo.setNom("figuritas");
+		String resultado = geo.getNom();
+		String esperado = "figuritas";
+		assertEquals(esperado, resultado);
 	}
 
 }
