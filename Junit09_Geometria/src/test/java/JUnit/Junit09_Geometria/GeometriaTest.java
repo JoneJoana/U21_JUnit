@@ -105,7 +105,7 @@ class GeometriaTest {
 		figuraEsperada = "Default";
 		input = -1;
 		Geometria geo9 = new Geometria(input);
-		figuraResultado = geo2.figura(input);
+		figuraResultado = geo9.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 	}
 
