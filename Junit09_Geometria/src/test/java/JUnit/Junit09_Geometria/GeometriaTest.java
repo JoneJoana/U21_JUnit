@@ -86,7 +86,7 @@ class GeometriaTest {
 		int resultEsperado = 125;
 		assertEquals(resultEsperado, resultado);
 	}
-	
+
 	@Test
 	public void testAreaRombo() {
 		int inputD = 5;
