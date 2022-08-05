@@ -62,6 +62,7 @@ class GeometriaTest {
 		assertEquals(esperado, resultado);
 	}
 		
+	@Test
 	public void testAreaPentagono() {
 		int p = 10;
 		int a = 25;
