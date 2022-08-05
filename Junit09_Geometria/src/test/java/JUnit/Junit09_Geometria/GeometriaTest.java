@@ -145,7 +145,7 @@ class GeometriaTest {
 		assertEquals(resultEsperado, resultado);
 	}
 	
-	@Test
+	@Test //testSetArea()
 	public void testSetArea() {
 		double inputArea = 20.55;
 		double areaEsperada = 20.55;
