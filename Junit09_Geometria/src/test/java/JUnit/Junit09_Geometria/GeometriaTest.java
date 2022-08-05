@@ -46,7 +46,45 @@ class GeometriaTest {
 		int resultado = geo.areatrapecio(2, 2, 3);
 		int esperado = 6;
 		assertEquals(esperado, resultado);
+	}
 
+	@Test
+	public void testFigura() {
+		String figuraResultado;
+		int input = 6;
+		String figuraEsperada = "Rombo";
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Default";
+		input = -1;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+	}
+
+	@Test
+	public void testAreaTriangulo() {
+		int a = 4, b = 9;
+		int esperado = 18;
+		int resultado = geo.areatriangulo(a, b);
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testAreaRectangulo() {
+		int b = 6, h = 2;
+		int esperado = 12;
+		int resultado = geo.arearectangulo(b, h);
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testAreaPentagono() {
+		int p = 10;
+		int a = 25;
+		int resultado = geo.areapentagono(p, a);
+		int resultEsperado = 125;
+		assertEquals(resultEsperado, resultado);
 	}
 
 }
