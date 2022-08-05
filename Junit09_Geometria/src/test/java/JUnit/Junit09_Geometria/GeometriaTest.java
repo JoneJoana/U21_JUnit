@@ -142,6 +142,16 @@ class GeometriaTest {
 		int resultEsperado = 17;
 		assertEquals(resultEsperado, resultado);
 	}
+	
+	@Test 
+	public void testGetSetId() {
+		int idEsperado = 4;
+		int idResultado;
+		geo.setId(4);
+		idResultado = geo.getId();
+		assertEquals(idEsperado, idResultado);
+		
+	}
 
 	@Test
 	public void testSetGetNom() {
