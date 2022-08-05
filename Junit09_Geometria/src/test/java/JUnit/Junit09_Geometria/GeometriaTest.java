@@ -51,8 +51,46 @@ class GeometriaTest {
 	@Test
 	public void testFigura() {
 		String figuraResultado;
-		int input = 6;
-		String figuraEsperada = "Rombo";
+		int input;
+		String figuraEsperada;
+
+		figuraEsperada = "cuadrado";
+		input = 1;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Circulo";
+		input = 2;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Triangulo";
+		input = 3;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Rectangulo";
+		input = 4;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Pentagono";
+		input = 5;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Rombo";
+		input = 6;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Romboide";
+		input = 7;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+
+		figuraEsperada = "Trapecio";
+		input = 8;
 		figuraResultado = geo.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 
