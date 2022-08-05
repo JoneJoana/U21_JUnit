@@ -45,5 +45,14 @@ class GeometriaTest {
 		figuraResultado = geo.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 	}
+	
+	@Test
+	public void testAreaPentagono() {
+		int p = 10;
+		int a = 25;
+		int resultado = geo.areapentagono(p, a);
+		int resultEsperado = 125;
+		assertEquals(resultEsperado, resultado);
+	}
 
 }
