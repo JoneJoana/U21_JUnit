@@ -32,6 +32,18 @@ class GeometriaTest {
 		assertEquals(esperado, resultado, delta);
 	}
 	
-	
+	@Test
+	public void testFigura() {
+		String figuraResultado;
+		int input = 6;
+		String figuraEsperada = "Rombo";
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+		
+		figuraEsperada = "Default";
+		input = -1;
+		figuraResultado = geo.figura(input);
+		assertEquals(figuraEsperada, figuraResultado);
+	}
 
 }
