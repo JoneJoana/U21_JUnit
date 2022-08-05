@@ -61,5 +61,13 @@ class GeometriaTest {
 		int resultado = geo.arearectangulo(b, h);
 		assertEquals(esperado, resultado);
 	}
+		
+	public void testAreaPentagono() {
+		int p = 10;
+		int a = 25;
+		int resultado = geo.areapentagono(p, a);
+		int resultEsperado = 125;
+		assertEquals(resultEsperado, resultado);
+	}
 
 }
