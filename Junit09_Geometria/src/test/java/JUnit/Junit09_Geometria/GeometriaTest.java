@@ -45,5 +45,21 @@ class GeometriaTest {
 		figuraResultado = geo.figura(input);
 		assertEquals(figuraEsperada, figuraResultado);
 	}
+	
+	@Test
+	public void testAreaTriangulo() {
+		int a = 4, b = 9;
+		int esperado = 18;
+		int resultado = geo.areatriangulo(a, b);
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testAreaRectangulo() {
+		int b = 6, h = 2;
+		int esperado = 12;
+		int resultado = geo.arearectangulo(b, h);
+		assertEquals(esperado, resultado);
+	}
 
 }
