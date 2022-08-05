@@ -49,7 +49,7 @@ class GeometriaTest {
 	}
 
 	@Test
-	public void testFigura() {		
+	public void testFigura() {
 		String figuraResultado;
 		int input;
 		String figuraEsperada;
@@ -141,6 +141,14 @@ class GeometriaTest {
 		int resultado = geo.arearombo(inputD, inputd);
 		int resultEsperado = 17;
 		assertEquals(resultEsperado, resultado);
+	}
+
+	@Test
+	public void testSetGetNom() {
+		geo.setNom("figuritas");
+		String resultado = geo.getNom();
+		String esperado = "figuritas";
+		assertEquals(esperado, resultado);
 	}
 
 }
