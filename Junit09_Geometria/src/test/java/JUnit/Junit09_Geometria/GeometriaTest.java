@@ -25,9 +25,11 @@ class GeometriaTest {
 	
 	@Test
 	public void testAreaCirculo() {
-		double resultado = geo.areaCirculo(2);
-		double esperado = Math.PI*2*2;
-		assertEquals(esperado, resultado);
+		int r = 2;
+		double delta = 0.01;
+		double resultado = geo.areaCirculo(r);
+		double esperado = Math.PI*Math.pow(r,2);
+		assertEquals(esperado, resultado, delta);
 	}
 	
 	
